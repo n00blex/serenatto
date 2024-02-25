@@ -53,6 +53,7 @@ input[type="checkbox"]:focus {
 .accordion-button:not(.collapsed) {
   background-color: var(--marrom-claro);
   border-color: var(--marrom-escuro);
+  color: black;
 }
 
 .btn-details:hover {
