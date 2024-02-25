@@ -69,7 +69,7 @@
                   <a class="nav-link" href="#">Sobre</a>
                 </li>
                 <li class="nav-item">
-                  <a class="nav-link" href="#">Contato</a>
+                  <a class="nav-link" href="#contact">Contato</a>
                 </li>
                 <li class="nav-item">
                   <a class="nav-link" href="#">
@@ -107,11 +107,12 @@
           </p>
         </div>
       </section>
+
       <section class="py-5">
         <h2 class="text-center fw-bold pb-1">Nossos serviços</h2>
 
         <div class="container d-flex justify-content-around flex-wrap">
-          <div class="card m-4" style="width: 20rem">
+          <div class="card m-4 col-12 col-lg-4" style="width: 20rem">
             <img
               src="./assets/cafe-card.png"
               class="card-img-top"
@@ -135,7 +136,7 @@
             </div>
           </div>
 
-          <div class="card m-4" style="width: 20rem">
+          <div class="card m-4 col-12 col-lg-4" style="width: 20rem">
             <img
               src="./assets/buffet-card.png"
               class="card-img-top"
@@ -159,7 +160,7 @@
             </div>
           </div>
 
-          <div class="card m-4" style="width: 20rem">
+          <div class="card m-4 col-12 col-lg-4" style="width: 20rem">
             <img
               src="./assets/delivery-card.png"
               class="card-img-top"
@@ -190,7 +191,7 @@
         <div class="row mx-0 align-items-center">
           <div class="col-12 col-md-6 col-lg-4">
             <div
-              class="card border-0 btn"
+              class="card border-0 btn w-100"
               data-bs-toggle="modal"
               data-bs-target="#modal-cafe-tradicional"
               style="width: 18rem"
@@ -207,7 +208,7 @@
           </div>
           <div class="col-12 col-md-6 col-lg-4">
             <div
-              class="card border-0 btn"
+              class="card border-0 btn w-100"
               data-bs-toggle="modal"
               data-bs-target="#modal-cafe-especial"
               style="width: 18rem"
@@ -223,7 +224,7 @@
             </div>
           </div>
           <div class="col-12 col-md-6 col-lg-4">
-            <div class="card border-0 btn" style="width: 18rem">
+            <div class="card border-0 btn w-100" style="width: 18rem">
               <img
                 src="./assets/produtos-vitaminas.png"
                 class="card-img-top"
@@ -235,7 +236,7 @@
             </div>
           </div>
           <div class="col-12 col-md-6 col-lg-4">
-            <div class="card border-0 btn" style="width: 18rem">
+            <div class="card border-0 btn w-100" style="width: 18rem">
               <img
                 src="./assets/produtos-paes.png"
                 class="card-img-top"
@@ -247,7 +248,7 @@
             </div>
           </div>
           <div class="col-12 col-md-6 col-lg-4">
-            <div class="card border-0 btn" style="width: 18rem">
+            <div class="card border-0 btn w-100" style="width: 18rem">
               <img
                 src="./assets/produtos-doces.png"
                 class="card-img-top"
@@ -259,7 +260,7 @@
             </div>
           </div>
           <div class="col-12 col-md-6 col-lg-4">
-            <div class="card border-0 btn" style="width: 18rem">
+            <div class="card border-0 btn w-100" style="width: 18rem">
               <img
                 src="./assets/produtos-salgados.png"
                 class="card-img-top"
@@ -285,7 +286,74 @@
           </p>
         </div>
       </section>
+
       <section class="banners banner-3"></section>
+
+      <section class="py-4 container">
+        <div class="border border-2 rounded p-3 col-10 col-lg-8 mx-auto">
+          <h3 class="fw-bold p-3">Entre em contato!</h3>
+          <form id="contact" action="" method="post">
+            <div class="form-floating mb-3">
+              <input
+                type="text"
+                class="form-control"
+                id="inputName"
+                placeholder="Nome"
+              />
+              <label for="inputName">Nome</label>
+            </div>
+            <div class="form-floating mb-3">
+              <input
+                type="email"
+                class="form-control"
+                id="inputEmail"
+                placeholder="Email"
+              />
+              <label for="inputEmail">Email</label>
+            </div>
+            <div class="form-floating mb-3">
+              <input
+                type="number"
+                class="form-control"
+                id="inputTelephone"
+                placeholder="Telefone"
+              />
+              <label for="inputTelephone">Telefone</label>
+            </div>
+            <div class="mb-3">
+              <select class="form-select" aria-label="Default select example">
+                <option selected>Preferência de contato</option>
+                <option value="1">Whatsapp</option>
+                <option value="2">Email</option>
+                <option value="3">Ligação</option>
+              </select>
+            </div>
+            <div class="mb-3">
+              <label for="satisfaction" class="form-label">
+                Nível de satisfação:
+              </label>
+              <input type="range" class="form-range" id="satisfaction" />
+            </div>
+            <div class="form-check">
+              <input
+                class="form-check-input"
+                type="checkbox"
+                value=""
+                id="flexCheckDefault"
+              />
+              <label class="form-check-label" for="flexCheckDefault">
+                Deseja receber novidades e promoções por email?
+              </label>
+            </div>
+            <button
+              type="button"
+              class="btn btn-details w-100 fw-bold py-2 mt-3"
+            >
+              Enviar
+            </button>
+          </form>
+        </div>
+      </section>
     </main>
 
     <!-- canvas-1 -->

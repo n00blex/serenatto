@@ -11,8 +11,7 @@ input[type="checkbox"] {
   box-shadow: none;
 }
 
-input[type="checkbox"]:checked,
-input[type="checkbox"]:focus {
+input[type="checkbox"]:checked {
   background-color: var(--marrom-claro);
   border-color: var(--marrom-claro);
   box-shadow: none;
@@ -63,4 +62,8 @@ input[type="checkbox"]:focus {
 
 .accordion-button:focus {
   box-shadow: none;
+}
+
+.form-range::-webkit-slider-thumb {
+  background-color: var(--marrom-claro);
 }
