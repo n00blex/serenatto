@@ -71,3 +71,19 @@ input[type="checkbox"]:checked {
 footer {
   background-color: var(--marrom-claro);
 }
+
+[data-bs-theme="dark"] {
+  color: white;
+  .nav-link,
+  .card-body,
+  .offcanvas,
+  .btn,
+  .btn-details,
+  .accordion-button:not(.collapsed) {
+    --bs-nav-link-color: white;
+    --bs-card-color: white;
+    --bs-offcanvas-color: white;
+    --bs-body-color: white;
+    color: white;
+  }
+}
